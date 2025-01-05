@@ -7,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrl: './searchbar.component.css'
 })
 export class SearchbarComponent {
-
+  onSubmit(event: any) {
+    event.preventDefault();
+    console.log(event.target.query.value);
+  }
 }
