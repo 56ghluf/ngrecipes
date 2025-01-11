@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter  } from '@angular/core';
 
 @Component({
   selector: 'app-searchbar',
@@ -6,9 +6,12 @@ import { Component } from '@angular/core';
   templateUrl: './searchbar.component.html',
   styleUrl: './searchbar.component.css'
 })
+
 export class SearchbarComponent {
+  @Output() submitEvent = new EventEmitter<string>();
+
   onSubmit(event: any) {
     event.preventDefault();
-    console.log(event.target.query.value);
+    this.submitEvent.emit(event.target.query.value);
   }
 }
