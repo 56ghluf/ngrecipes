@@ -1,0 +1,71 @@
+div[name="header"] {
+    cursor: pointer;
+    padding: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  
+  div[name="header"]:hover {
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Image styling */
+  img[name="image"] {
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 16px;
+    float: left;
+  }
+  
+  /* Title and metadata styles */
+  h3[name="mealTitle"] {
+    margin: 0;
+    font-size: 1.5em;
+    color: #333;
+  }
+  
+  h4[name="region"],
+  h4[name="catgory"] {
+    margin: 0;
+    font-size: 1em;
+    color: #666;
+  }
+  
+  /* Expanded details styling */
+  div[name="ingredients"],
+  div[name="instructions"] {
+    margin-top: 16px;
+    padding: 16px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    background-color: #ffffff;
+  }
+  
+  h4[name="ingredientsTitle"],
+  h4[name="instructionsTitle"] {
+    font-size: 1.2em;
+    color: #444;
+    margin-bottom: 8px;
+  }
+  
+  ul[name="ingredientsList"] {
+    padding-left: 20px;
+    margin: 0;
+  }
+  
+  li[name="ingredientsListItem"] {
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 4px;
+  }
+  
+  p[name="instrucitonsParagraph"] {
+    font-size: 1em;
+    color: #444;
+    line-height: 1.6;
+  }

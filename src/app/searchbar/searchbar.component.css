@@ -1,0 +1,66 @@
+/* Styles for the form container */
+#searchBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    margin: 20px auto;
+    max-width: 500px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for the input field */
+#searchbarInput {
+    flex: 1;
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#searchbarInput:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Styles for the submit button */
+#searchBarSubmit {
+    padding: 8px 16px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#searchBarSubmit:hover {
+    background-color: #0056b3;
+}
+
+#searchBarSubmit:active {
+    transform: scale(0.98);
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    #searchBar {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    #searchbarInput {
+        width: 100%;
+    }
+
+    #searchBarSubmit {
+        width: 100%;
+    }
+}
